@@ -6,8 +6,6 @@ import { render } from "react-dom";
 import AppRouter from "./AppRouter";
 
 render(
-	<div>
-		<AppRouter />
-	</div>,
+	<AppRouter />,
 	document.getElementById("app")
 );
