@@ -1,6 +1,5 @@
 
 import Justore from 'justore';
-import axios from 'axios';
 
 var mainStore = new Justore({
 	posts:[]
