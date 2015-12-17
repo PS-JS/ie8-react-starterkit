@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "React Starterkit for IE8 , react-router ,justore",
   "scripts": {
-    "dev": "webpack --watch --colors --config webpack.config.js",
+    "dev": "webpack --watch --colors --progress --config webpack.config.js",
     "pub": "webpack --colors --optimize-minimize --config webpack.config.js",
     "server": "node server.js"
   },
@@ -17,6 +17,8 @@
     "console-polyfill": "^0.2.2",
     "es6-promise": "^3.0.2",
     "history": "1.13.1",
+    "immutable": "^3.7.6",
+    "justore": "0.3.2",
     "object-assign": "^4.0.1",
     "react": "0.14.3",
     "react-dom": "0.14.3",

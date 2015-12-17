@@ -3,22 +3,16 @@ import React, { Component, PropTypes } from "react";
 class Ctnt extends Component {
 
 	render() {
-		const { detail } = this.props;
+		const params = this.props.routeParams;
+
 		return (
 			<div>
-				<h1>111</h1>
+				<h1>Id: {params.id}</h1>
 				<p>bbb</p>
 			</div>
 		);
 	}
 }
 
-function mapStateToProps(state) {
-	return {
-		detail: {
-			ctnt: state.ctnt			
-		}
-	};
-}
 
 export default Ctnt;
