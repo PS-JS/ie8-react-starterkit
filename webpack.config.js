@@ -10,9 +10,9 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     output: {
-        path: __dirname + "/dist",
+        path: __dirname + "/dest",
         filename: "bundle.js",
-        publicPath: "/dist/",
+        publicPath: "/dest/",
         sourceMapFilename: "[file].map?hash=[hash]"
     },
     devtool: 'source-map',
