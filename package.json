@@ -4,7 +4,7 @@
   "description": "React Starterkit for IE8 , react-router ,justore",
   "scripts": {
     "dev": "webpack --watch --colors --config webpack.config.js",
-    "build": "webpack --colors --optimize-minimize --config webpack.config.js",
+    "pub": "webpack --colors --optimize-minimize --config webpack.config.js",
     "server": "node server.js"
   },
   "repository": {
