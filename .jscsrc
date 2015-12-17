@@ -1,0 +1,6 @@
+{
+  "preset": "airbnb",
+  "excludeFiles": ["dest/**", "node_modules/**"],
+  "validateIndentation": 4,
+  "requireTrailingComma": false
+}
