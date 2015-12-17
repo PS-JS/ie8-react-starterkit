@@ -1,6 +1,6 @@
 # IE8 React starterkit
 
-> React Starterkit for IE8 and above , react-router ,justore.
+> React Starterkit for IE8 and above , react-router , justore , and es2015.
 
 
 
