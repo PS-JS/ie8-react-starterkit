@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from "react";
 import { Link } from "react-router";
 import mainStore from '../store/main-store';
 
-import AbstRender from './AbstRender';
+import CitesRender from './CitesRender';
 
 class Overview extends Component {
 	constructor(props) {
@@ -17,7 +17,7 @@ class Overview extends Component {
 	render() {
 		return (
 			<div>
-				<AbstRender/>
+				<CitesRender/>
 			</div>
 		);
 	}
