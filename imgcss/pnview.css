@@ -6,3 +6,17 @@
     position: absolute;top:0;bottom: 0;left: 0;right: 0;
     background: #f5f5f5;
 }
+.pnview-master-container .tab-content{
+    position: absolute;
+    top: 36px;bottom: 0;left: 0;right: 0;
+}
+.main-aside{
+    height: 100%;width: 120px;float: left;
+    background:#f5f5f5 url('./bg_side.gif') repeat-y right;
+}
+.main-section{
+    background: #FFF;
+    margin: 0 0 0 120px;
+    height: 100%;
+    overflow: auto;
+}

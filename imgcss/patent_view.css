@@ -40,7 +40,7 @@ body {overflow: hidden;}
 						.result-toolbar .link-bar .btn-26 { border-radius: 0 2px 2px 0; border-left: none;}
 
 						.result-toolbar .link-bar .copy-tip { display: none; position: absolute; padding-top: 5px; top:32px; left: 0;
-							background: url('/img/patent_view/copy-tip.png') no-repeat; width: 86px; height: 29px; padding-top: 9px;
+							background: url('./fromold/copy-tip.png') no-repeat; width: 86px; height: 29px; padding-top: 9px;
 							font-size: 11px; text-align: center; z-index: 1000;
 						}
 				.app-views { bottom: 0; left: 0; position: absolute; right: 0; top: 74px; top: 75px\9; *top:74px; }
@@ -51,7 +51,7 @@ body {overflow: hidden;}
 					}
 						.app-views .side {position: absolute; top: 0; bottom: 0; left: 0; margin: 0; }
 					.view-body.detail-content {}
-						#detail-view .side {width: 120px; background:#f5f5f5 url('/img/patent_view/bg_side.gif') repeat-y right; }
+						#detail-view .side {width: 120px; background:#f5f5f5 url('./fromold/bg_side.gif') repeat-y right; }
 						.side {}
 					.view-body.dual-content {}
 						.dual-content .major.view-content {left: 420px; }
@@ -161,7 +161,7 @@ body {overflow: hidden;}
 	.app-side .side-list {position: absolute; right: 0; width: 250px; height: 100%; background: #fff; border-left: 1px solid #d2d2d2; }
 	.app-side.off .side-list, .app-side.off .side-nav {display: none;}
 		.app-side .side-list h3 { padding: 7px; font-size: 14px; font-weight: normal; color: #fff; background: #75bb00;
-			/*background: url('/img/patent_view/red-flag.gif') 0 center no-repeat;*/
+			/*background: url('./fromold/red-flag.gif') 0 center no-repeat;*/
 		}
 		.app-side .side-list h3 .list-title { text-transform: capitalize; display: inline-block; max-width: 120px; overflow: hidden;
 			text-overflow: ellipsis; text-transform: capitalize; vertical-align: bottom; white-space: nowrap;
@@ -170,7 +170,7 @@ body {overflow: hidden;}
 			margin-right: 5px;
 		}
 		.app-side .side-list .list-toggle {position: absolute; left: -11px; top: 50%; margin-top: -46px; width: 11px;
-			height: 92px; background: url("/img/patent_view/list_toggle.jpg") no-repeat; cursor: pointer;
+			height: 92px; background: url("./fromold/list_toggle.jpg") no-repeat; cursor: pointer;
 		}
 		.app-side.collapse .side-list .list-toggle {background-position: 0 -93px; }
 		.app-side .side-list .list-container {position: absolute; left: 0; right: 0; top: 32px;
@@ -242,7 +242,7 @@ body {overflow: hidden;}
 			-ms-user-select: none;
 			user-select: none;
 		}
-			.app-side .side-nav > * { position: relative; background: url("/img/patent_view/list_tool.jpg") no-repeat; 
+			.app-side .side-nav > * { position: relative; background: url("./fromold/list_tool.jpg") no-repeat;
 				width: 33px; height: 78px; margin-bottom: 5px; cursor: pointer; 
 			}
 			.app-side .side-nav > *:active { left: 1px; top: 1px; }
@@ -299,7 +299,7 @@ body {overflow: hidden;}
 			.side-nav ul li a {display: block; padding: 6px 10px; border-bottom: 1px solid #ddd; color: #555; }
 			.side-nav ul li:first-child a {border-top: 1px solid #fff; }
 			.side-nav ul li a:hover {background: #ddd; color: #000; }
-		.side-nav ul li.selected a {background: url('/img/patent_view/side_current.gif') no-repeat right center #555 !important;
+		.side-nav ul li.selected a {background: url('./fromold/side_current.gif') no-repeat right center #555 !important;
 			color: #fff !important; 
 		}
 
@@ -312,7 +312,7 @@ body {overflow: hidden;}
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background:url('/img/patent_view/side_current_gray.gif') right center no-repeat;
+			background:url('./fromold/side_current_gray.gif') right center no-repeat;
 			z-index: 1;
 			/*outline: #009 dotted 1px;*/
 			border:#555 solid 2px;
@@ -323,7 +323,7 @@ body {overflow: hidden;}
     .lang-switcher { margin-top: 20px; }
     	.lang-switcher h3 { padding: 0 0 5px 8px; font-size: 12px; color: #666; font-weight: normal;}
     	.lang-switcher ul li a {display: block; padding: 3px 16px; color: #555; font-family: Arial;}
-    	.lang-switcher ul li.selected a { background: url("/img/patent_view/arrow.gif") no-repeat 4px 7px;
+    	.lang-switcher ul li.selected a { background: url("./fromold/arrow.gif") no-repeat 4px 7px;
     		color: #609900; font-weight: bold;
     	}
 	.lang-switcher-h {
@@ -345,7 +345,7 @@ body {overflow: hidden;}
 		margin-left: 15px;
 	}
 	.lang-switcher-h ul li a {display: block; padding:  3px  0px 3px 16px; color: #555; font-family: Arial;}
-	.lang-switcher-h ul li.selected a { background: url("/img/patent_view/arrow.gif") no-repeat 4px 7px;
+	.lang-switcher-h ul li.selected a { background: url("./fromold/arrow.gif") no-repeat 4px 7px;
 		color: #609900; font-weight: bold;
 	}
 	.clear{
@@ -354,10 +354,10 @@ body {overflow: hidden;}
 
 /* 封面图 */
 	.view-left-imgdiv a { height: 180px; display: block; line-height: 180px;}
-	.view-left-imgdiv:after { content:''; display: block; background: url('/img/patent_view/img_shadow.png') repeat-y;
+	.view-left-imgdiv:after { content:''; display: block; background: url('./fromold/img_shadow.png') repeat-y;
 		position: absolute; top: 0; bottom: 0; right: 0; width: 8px; background: none\0;
 	}
-	.view-left-imgdiv .after { background: url('/img/patent_view/img_shadow.png') repeat-y;
+	.view-left-imgdiv .after { background: url('./fromold/img_shadow.png') repeat-y;
 		position: absolute; top: 0; bottom: 0; right: 0; width: 8px;
 	}
 
@@ -560,7 +560,7 @@ body {overflow: hidden;}
 	.family-priority-content .priority { float: left; margin: 0 8px 8px 0;
 		background: #e7e7e7; width: 21px; height: 21px;
 	}
-	.family-priority-content .priority.light { background: url('/img/patent_view/priority.gif') no-repeat #75BB00; line-height: 24px; 
+	.family-priority-content .priority.light { background: url('./fromold/priority.gif') no-repeat #75BB00; line-height: 24px;
 		text-align: center; color: #fff; text-indent: -9999em;
 	}
 
@@ -621,7 +621,7 @@ body {overflow: hidden;}
 
 	#family-legal-top .icon-indicator i,
 	#family-view .family-legal-content i {
-		background: url("/img/patent_view/status_icon.png") no-repeat;
+		background: url("./fromold/status_icon.png") no-repeat;
 		display: inline-block;
 		height: 12px;
 		vertical-align: text-top;
@@ -937,14 +937,14 @@ body {overflow: hidden;}
 	.help-tips { position: absolute; padding: 10px; background: rgba(0, 0, 0, 0.6); color: #fff; min-width: 100px;
 		background: url('/img/rgba/black_60.png')\9;
 	}
-		.help-tips:before { content:''; background: url('/img/patent_view/tip_arrow.png') no-repeat; display: block; position: absolute;}
+		.help-tips:before { content:''; background: url('./fromold/tip_arrow.png') no-repeat; display: block; position: absolute;}
 		.help-tips.tip-bottom:before { top: -9px; background-position: -29px 0; width: 17px; height: 9px;}
 		.help-tips.tip-top:before { bottom: -9px; background-position: -51px 0; width: 17px; height: 9px;}
 		.help-tips.tip-left:before { right: -9px; background-position: -15px 0; width: 9px; height: 17px;}
 		.help-tips.tip-right:before { left: -9px; width: 9px; height: 17px;}
 		.help-tips .tips-title { font-weight: normal; margin-bottom: 12px;}
 		.help-tips ul { margin-top: 5px;}
-			.help-tips ul li, .help-tips ul li span {background: url('/img/patent_view/bg_key.png') no-repeat;}
+			.help-tips ul li, .help-tips ul li span {background: url('./fromold/bg_key.png') no-repeat;}
 			.help-tips ul li { position: relative; display: inline-block; *display:inline; *zoom:1; height: 26px; padding: 0 10px; 
 				border: 1px solid #d2d2d2; border-radius: 3px; color: #333333; line-height: 26px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 			}
@@ -1527,7 +1527,7 @@ div.origin-abst{
     line-height: 14px;
 }
 #img-show > .img-close{
-	background-image: url('/img/patent_view/close.png');
+	background-image: url('./fromold/close.png');
     background-position: center center;
     background-repeat: no-repeat;
     height: 34px;
@@ -1540,7 +1540,7 @@ div.origin-abst{
     top: 10px;
 }
 #img-show > .img-close:hover{
-	background-image: url('/img/patent_view/close-hover.png');
+	background-image: url('./fromold/close-hover.png');
 }
 .patent-img-no{
 	position: absolute;
@@ -1640,7 +1640,7 @@ div.origin-abst{
 	display: block;
 	width: 34px;
 	height: 34px;
-	background: url('/img/patent_view/close-hover.png') no-repeat;
+	background: url('./fromold/close-hover.png') no-repeat;
 	z-index: 9200;
 	cursor: pointer;
 }
@@ -1680,16 +1680,16 @@ div.origin-abst{
 
 .big-img-nav.next{
 	right: 10px;
-	background: url('/img/patent_view/right.png') no-repeat;
+	background: url('./fromold/right.png') no-repeat;
 }
 .big-img-nav.next:hover{
 	right: 10px;
-	background: url('/img/patent_view/right-hover.png') no-repeat;
+	background: url('./fromold/right-hover.png') no-repeat;
 }
 .big-img-nav.prev{
 	left: 10px;
-	background: url('/img/patent_view/left.png') no-repeat;
+	background: url('./fromold/left.png') no-repeat;
 }
 .big-img-nav.prev:hover{
-	background: url('/img/patent_view/left-hover.png') no-repeat;
+	background: url('./fromold/left-hover.png') no-repeat;
 }

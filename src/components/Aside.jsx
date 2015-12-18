@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from "react";
+import classnames from 'classnames';
 import { Link } from "react-router";
 
 
@@ -9,9 +10,10 @@ class Aside extends Component {
 	}
 
 	render() {
+
 		return (
-			<div class="side">
-				<div class="side-nav">
+			<div className={this.props.className}>
+				<div className="side-nav">
 					<ul>
 						<li className="view-left-imgdiv thumb-item" data-render="sThumb">
 							<span className="patent-img-no">58 image(s)</span>

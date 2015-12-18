@@ -13,10 +13,13 @@ class MainFrame extends Component {
 		return (
 			<div className="pnview-master-container">
 				<Header className="pnview-header"/>
-				<div id="detail-view">
-					<Aside className="side"/>
+				<div className="tab-content">
+					<Aside className="main-aside"/>
+					<div className="content-box main-section">
+						{this.props.children}
+					</div>
 				</div>
-				{this.props.children}
+
 			</div>
 		);
 	}
