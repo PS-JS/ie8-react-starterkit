@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
-import { Router, Route, History, IndexRoute } from "react-router";
+import { Router, Route, History, IndexRoute, IndexRedirect } from "react-router";
 
 import List from "./components/List";
 import Content from "./components/Ctnt";
 import MainFrame from './components/MainFrame';
 import Overview from './components/Overview';
 import Citation from './components/Citation';
+import CitesRender from './components/CitesRender';
+
+
 
 export default class AppRouter extends Component {
 	render() {
@@ -14,7 +17,11 @@ export default class AppRouter extends Component {
 			<Router>
 				<Route path="/" component={MainFrame}>
 					<IndexRoute component={Overview}/>
-					<Route path="/citation" component={Citation} />
+					<Route path="citation" component={Citation} >
+						<IndexRedirect to="cites" />
+						<Route path="cites" component={CitesRender} />
+						<Route path="citedby" component={CitesRender} />
+					</Route>
 				</Route>
 
 			</Router>

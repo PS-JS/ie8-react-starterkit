@@ -4,6 +4,8 @@ import mainStore from '../store/main-store';
 
 import CitesRender from './CitesRender';
 
+import TabLinks from './common/TabLinks';
+
 class Overview extends Component {
 	constructor(props) {
 		super(props);
@@ -15,9 +17,14 @@ class Overview extends Component {
 	}
 
 	render() {
+		var links = [
+			{name:'Cites(15)',path:'/citation/cites'},
+			{name:'Cited by(6)',path:'/citation/citedby'}
+		];
 		return (
 			<div>
-				<CitesRender/>
+				<TabLinks links={links}/>
+				{this.props.children}
 			</div>
 		);
 	}

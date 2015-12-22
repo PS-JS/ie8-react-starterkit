@@ -41,3 +41,38 @@
     text-align: center;
     user-select: none;
 }
+
+
+
+
+
+
+
+.link-tab-headers{
+    border-bottom: 1px solid #D2D2D2;
+    line-height: 25px;
+    font-size: 13px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.link-tab-headers li{
+    display: inline-block;
+    margin-bottom: -1px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px 3px 0 0;
+    cursor: pointer;
+    margin-right: 1em;
+    background: #f5f5f5;
+}
+.link-tab-headers li a{
+    color: #555555 !important;
+}
+.link-tab-headers li.selected{
+    border-bottom: 1px solid #FFF;
+    background: none;
+}
+.link-tab-headers li.selected{
+    cursor: default;
+}
