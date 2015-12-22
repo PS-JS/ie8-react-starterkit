@@ -7,9 +7,27 @@
     background: #f5f5f5;
 }
 .pnview-header{
+    position: absolute;
     padding: 5px 0;
-    border-color: #75bb00;
+    border-bottom: none;
 }
+.header-line{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    right: 0;
+}
+
+.common-section h3{
+    font-size: 20px;
+    padding: 5px 0;
+    color: #555;
+    margin-bottom: 10px;
+}
+.bottom-border{
+    border-bottom: #d2d2d2 solid 1px;
+}
+
 .pnview-master-container .tab-content{
     position: absolute;
     top: 46px;bottom: 0;left: 0;right: 0;
@@ -56,6 +74,7 @@
     padding-left: 10px;
 }
 .link-tab-headers li{
+    user-select: none;
     display: inline-block;
     margin-bottom: -1px;
     padding-left: 20px;
@@ -75,4 +94,31 @@
 }
 .link-tab-headers li.selected{
     cursor: default;
+}
+
+
+
+@keyframes progress {
+    0%    { transform: translateX(-15vw); }
+    100%  {transform: translateX(100vw);}
+}
+
+.progress-bar{
+    position: relative;
+    display: block;
+    margin: 0;padding: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #75bb00;
+}
+.progress-bar .white-cover{
+    width: 15vw;
+    display: none;
+    height: 1px;
+    position: absolute;top:0;bottom: 0;left: 0;
+    background: white;
+    animation:progress 1s infinite;
+}
+.progress-bar.active .white-cover{
+    display: inline-block;
 }

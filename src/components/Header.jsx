@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from "react";
 import { Link, IndexLink } from "react-router";
 
-
+import ProgressBar from './common/ProgressBar';
 
 class Header extends Component {
 	constructor(props) {
@@ -42,6 +42,7 @@ class Header extends Component {
 
 					</div>
 				</div>
+				<ProgressBar className="header-line"/>
 			</div>
 		);
 	}

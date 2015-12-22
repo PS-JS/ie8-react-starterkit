@@ -8,6 +8,8 @@ import MainFrame from './components/MainFrame';
 import Overview from './components/Overview';
 import Citation from './components/Citation';
 import CitesRender from './components/CitesRender';
+import Family from './components/Family';
+import Legal from './components/Legal';
 
 
 
@@ -22,6 +24,8 @@ export default class AppRouter extends Component {
 						<Route path="cites" component={CitesRender} />
 						<Route path="citedby" component={CitesRender} />
 					</Route>
+					<Route path="family" component={Family}/>
+					<Route path="legal" component={Legal}/>
 				</Route>
 
 			</Router>
