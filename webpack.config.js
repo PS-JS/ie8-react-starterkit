@@ -1,5 +1,13 @@
 /* global __dirname */
 var webpack = require('webpack');
+var path = require('path');
+
+const alias = {
+    __:path.join(__dirname,'src','utils','__.js')
+};
+
+
+
 
 module.exports = {
     context: __dirname,
@@ -7,7 +15,8 @@ module.exports = {
         "./src/index"
     ],
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js', '.jsx'],
+        alias:alias
     },
     output: {
         path: __dirname + "/dest",

@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from "react";
 import { Link, IndexLink } from "react-router";
 
+import __ from '../utils/__';
+
 import ProgressBar from './common/ProgressBar';
 
 class Header extends Component {
@@ -21,16 +23,16 @@ class Header extends Component {
 
 					<div className="tab-mode">
 
-						<IndexLink activeClassName="selected" to={`/`}>Overview</IndexLink>
+						<IndexLink activeClassName="selected" to={`/`}>{__('Overview')}</IndexLink>
 
 
-						<Link activeClassName="selected" to={`/citation`}>Citation</Link>
+						<Link activeClassName="selected" to={`/citation`}>{__('citation-analysis')}</Link>
 
 
-						<Link activeClassName="selected" to={`/family`}>Family</Link>
+						<Link activeClassName="selected" to={`/family`}>{__('patent-family')}</Link>
 
 
-						<Link activeClassName="selected" to={`/legal`}>Legal</Link>
+						<Link activeClassName="selected" to={`/legal`}>{__('legal-information')}</Link>
 
 					</div>
 
