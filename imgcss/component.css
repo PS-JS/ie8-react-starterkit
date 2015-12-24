@@ -1,0 +1,41 @@
+
+
+@keyframes progress {
+    0%    { transform: translateX(-15vw); }
+    100%  {transform: translateX(100vw);}
+}
+
+.progress-bar{
+    position: relative;
+    display: block;
+    margin: 0;padding: 0;
+    height: 1px;
+    overflow: hidden;
+    background-color: #75bb00;
+}
+.progress-bar .white-cover{
+    width: 15vw;
+    display: none;
+    height: 1px;
+    position: absolute;top:0;bottom: 0;left: 0;
+    background: white;
+    animation:progress 1s infinite;
+}
+.progress-bar.active .white-cover{
+    display: inline-block;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+}
+
+

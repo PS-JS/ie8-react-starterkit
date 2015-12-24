@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from "react";
 import { Link, IndexLink } from "react-router";
 
+import Dropdown, { DropdownTrigger, DropdownContent } from './common/react-simple-dropdown/Dropdown.jsx';
+
 import {__} from 'utils';
 
 import ProgressBar from './common/ProgressBar';
@@ -37,12 +39,26 @@ class Header extends Component {
 					</div>
 
 
-					<div className="right-side">
 
-
-
-
+					<div className="header-right">
+						<Dropdown className="lang-dropdown">
+							<DropdownTrigger>
+								<strong className="lang-btn">English</strong>
+							</DropdownTrigger>
+						<DropdownContent>
+							<ul className="lang-dropdown__quick-links lang-dropdown__segment">
+								<li className="lang-dropdown__link">
+									<a className="lang-dropdown__link__anchor" href="/favorites">简体</a>
+								</li>
+								<li className="lang-dropdown__link">
+									<a className="lang-dropdown__link__anchor">繁体</a>
+								</li>
+							</ul>
+						</DropdownContent>
+					</Dropdown>
 					</div>
+
+
 				</div>
 				<ProgressBar className="header-line"/>
 			</div>
