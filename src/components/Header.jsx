@@ -17,7 +17,7 @@ class Header extends Component {
 			<div>
 				<div className="header-v2 pnview-header">
 					<a href="/" className="logo">
-						<img src="http://vg2-static.patsnap.com/img/logo_patsnap_35.png?v=65f19feb"/>
+						<img src="//static.patsnap.com/img/logo_patsnap_35.png"/>
 
 					</a>
 

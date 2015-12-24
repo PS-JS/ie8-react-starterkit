@@ -26,12 +26,11 @@ class CitesRender extends Component {
 		];
 		return (
 			<div className="pnview-cites-render">
-				<div className="common-section">
-					<h3>{type} <span>(0)</span></h3>
+				<div className="mar-top common-section">
 					<PnsTable list={pnlistFake}/>
 				</div>
 
-				<div className="common-section">
+				<div className="mar-top common-section">
 					<h3 className="bottom-border"><span>Other references</span></h3>
 					This patent has no non-patent reference.
 				</div>

@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from "react";
 import { Link } from "react-router";
 import mainStore from '../store/main-store';
 
+import {__} from 'utils';
 import CitesRender from './CitesRender';
 
 import TabLinks from './common/TabLinks';
@@ -18,8 +19,8 @@ class Overview extends Component {
 
 	render() {
 		var links = [
-			{name:'Cites(15)',path:'/citation/cites'},
-			{name:'Cited by(6)',path:'/citation/citedby'}
+			{name:`${__('Cites')} (15)`,path:'/citation/cites'},
+			{name:`${__('cited-by')} (6)`,path:'/citation/citedby'}
 		];
 		return (
 			<div>
