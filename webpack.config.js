@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var path = require('path');
 
 const alias = {
-    __:path.join(__dirname,'src','utils','__.js')
+    utils:path.join(__dirname,'src','utils')
 };
 
 

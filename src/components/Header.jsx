@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from "react";
 import { Link, IndexLink } from "react-router";
 
-import __ from '../utils/__';
+import {__} from 'utils';
 
 import ProgressBar from './common/ProgressBar';
 

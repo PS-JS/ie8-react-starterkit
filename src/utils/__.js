@@ -10,7 +10,7 @@ var langMapping = {
 export default function __(keyPath, lang) {
 	var lang = lang || currentLang;
 
-	var value = Bro(langMapping[lang]).iCanHaz(keyPath) || keyPath;
+	var value = Bro(langMapping).iCanHaz(`${lang}.pnView.${keyPath}`) || Bro(langMapping).iCanHaz(`${lang}.g.${keyPath}`) || keyPath;
 
 	return value;
 }
