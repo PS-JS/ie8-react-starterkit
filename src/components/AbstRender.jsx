@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from "react";
 import { Link } from "react-router";
 import mainStore from '../store/main-store';
+import T from 'T';
 
 import {__} from 'utils';
 
@@ -21,33 +22,33 @@ class AbstRender extends Component {
 					<table className="patent-info highlighter">
 						<tbody>
 						<tr>
-							<th>{__('TITLE')}</th>
+							<th><T>TITLE</T></th>
 							<td colSpan="3">
 								<div className="lang ">Compositions and methods for treating cancer</div>
 							</td>
 
 						</tr>
 						<tr>
-							<th>{__('PN')}</th>
+							<th><T>PN</T></th>
 							<td>{this.props.pn}</td>
-							<th>{__('PBD')}</th>
+							<th><T>PBD</T></th>
 							<td className="view-table-pbdt">11 Dec 2013</td>
 
 						</tr>
 						<tr>
-							<th>{__('APN')}</th>
+							<th><T>APN</T></th>
 							<td>CN201280013888.1</td>
-							<th>{__('APD')}</th>
+							<th><T>APD</T></th>
 							<td className="view-table-apd">18 Jan 2012</td>
 
 						</tr>
 						<tr>
-							<th>{__('AN_ST')}</th>
+							<th><T>AN_ST</T></th>
 							<td colSpan="3" className="view-table-docdb_an"><p> 宾夕法尼亚大学董事会 </p></td>
 
 						</tr>
 						<tr>
-							<th>{__('AN')}</th>
+							<th><T>AN</T></th>
 							<td colSpan="3" id="view-table-an">
 								<div className="lang">
 									<p>
@@ -62,13 +63,13 @@ class AbstRender extends Component {
 
 						</tr>
 						<tr>
-							<th>{__('IN_ST')}</th>
+							<th><T>IN_ST</T></th>
 							<td colSpan="3" className="view-table-docdb_an"><p>COUKOS GEORGE</p>
 								<p>POWELL DANIEL J</p></td>
 
 						</tr>
 						<tr>
-							<th>{__('IN')}</th>
+							<th><T>IN</T></th>
 							<td colSpan="3" id="view-table-in">
 								<div className="lang ">
 									<p>
@@ -90,7 +91,7 @@ class AbstRender extends Component {
 
 						</tr>
 						<tr>
-							<th className="th_ipc">{__('IPC')}</th>
+							<th className="th_ipc"><T>IPC</T></th>
 							<td colSpan="3">
 								<p>IPC(1-7):
 									<a href="/patent/result?q=IPC_FACET:&quot;A61P35%2F00&quot;"
@@ -108,7 +109,7 @@ class AbstRender extends Component {
 
 						</tr>
 						<tr>
-							<th className="th_cpc">{__('CPC')}</th>
+							<th className="th_cpc"><T>CPC</T></th>
 							<td colSpan="3">
 								<a href="/patent/result?q=CPC_FACET:&quot;C07K2318%2F20&quot;"
 											   rel="C07K2318/20" data-type="cpc" className="cpc" id="CPC0" target="_blank">C07K2318/20</a>
@@ -134,14 +135,14 @@ class AbstRender extends Component {
 
 						</tr>
 						<tr>
-							<th>{__('ATC')}</th>
+							<th><T>ATC</T></th>
 							<td colSpan="3">
 								<div className="lang "><p>北京纪凯知识产权代理有限公司</p></div>
 							</td>
 
 						</tr>
 						<tr>
-							<th>{__('AT')}</th>
+							<th><T>AT</T></th>
 							<td colSpan="3">
 								<div className="lang "><p>赵蓉民</p>
 									<p>张全信</p></div>
@@ -149,20 +150,20 @@ class AbstRender extends Component {
 
 						</tr>
 						<tr>
-							<th>{__('PRIORITY')}</th>
+							<th><T>PRIORITY</T></th>
 							<td className="" colSpan="3"><p>201161433731 18 Jan 2011 US</p>
 								<p>2012021738 18 Jan 2012 US</p></td>
 
 						</tr>
 						<tr className="external-links">
-							<th>{__('EXTERNAL_LINK')}</th>
+							<th><T>EXTERNAL_LINK</T></th>
 							<td colSpan="3">
 								<a href="http://worldwide.espacenet.com/publicationDetails/biblio?DB=EPODOC&amp;II=0&amp;ND=3&amp;adjacent=true&amp;locale=en_EP&amp;FT=D&amp;CC=CN&amp;NR=103442768A&amp;KC=A"
 								target="_blank">Espacenet</a>
 							</td>
 						</tr>
 						<tr className="abst-tr">
-							<td colSpan="4"><span className="ttl">{__('ABST')}</span>
+							<td colSpan="4"><span className="ttl"><T>ABST</T></span>
 								<div><p>The invention provides compositions and methods for treating ovarian
 									cancer. Specifically, the invention relates to administering a genetically modified
 									T cell having [alpha]-folate receptor (FR[alpha]) binding domain and 4-IBB (CD137)

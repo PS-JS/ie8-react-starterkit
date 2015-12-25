@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import mainStore from '../store/main-store';
 
 import {__} from 'utils';
+import T from 'T';
 import CitesRender from './CitesRender';
 
 import TabLinks from './common/TabLinks';

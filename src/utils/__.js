@@ -1,5 +1,6 @@
 var Bro = require('brototype');
-var currentLang = window.lang || 'en';
+import mainStore from 'mainStore';
+
 var langMapping = {
 	'en': require('../i18n/en.js'),
 	'cn': require('../i18n/cn.js'),
@@ -7,9 +8,20 @@ var langMapping = {
 };
 
 
-export default function __(keyPath, project = 'pnView', lang = currentLang) {
+export default function __(keyPath, project = 'pnView', lang) {
 
-	var value = Bro(langMapping).iCanHaz(`${lang}.${project}.${keyPath}`) || Bro(langMapping).iCanHaz(`${lang}.g.${keyPath}`) || keyPath;
+	var useLang = lang || mainStore.read('curLang');
+	console.log(mainStore.read('curLang'));
+	var value = Bro(langMapping).iCanHaz(`${useLang}.${project}.${keyPath}`) || Bro(langMapping).iCanHaz(`${useLang}.g.${keyPath}`) || keyPath;
 
 	return value;
+}
+
+export function lang(lang){
+	var langs = ['en','cn','tw'];
+	if(langs.indexOf(lang)>=0){
+		mainStore.write('curLang',lang);
+	}
+
+	return mainStore.read('curLang')
 }

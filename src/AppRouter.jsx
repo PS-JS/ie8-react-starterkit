@@ -13,7 +13,7 @@ import Legal from './components/Legal';
 
 
 
-export default class AppRouter extends Component {
+var AppRouter = React.createClass({
 	render() {
 		return (
 			<Router>
@@ -31,4 +31,6 @@ export default class AppRouter extends Component {
 			</Router>
 		);
 	}
-}
+});
+
+export default AppRouter;

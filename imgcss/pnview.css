@@ -113,6 +113,7 @@
 
 .lang-dropdown a{
     color: #555;
+    cursor: pointer;
 }
 
 .lang-dropdown .dropdown__trigger {
@@ -147,6 +148,7 @@
 .lang-dropdown__link {
     padding: 5px 10px;
     min-width: 62px;
+    cursor: pointer;
 }
 .lang-dropdown__link:hover{
     background: #E4E4E4;

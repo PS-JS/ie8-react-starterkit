@@ -1,4 +1,7 @@
 var g = {
+  'lang-en':'English',
+  'lang-cn':'中文',
+  'lang-tw':'繁体',
   'loading': 'Loading...',
   'Saving': 'Saving...',
   'selectAll': 'Select All',

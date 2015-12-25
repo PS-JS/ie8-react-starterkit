@@ -3,7 +3,9 @@ var webpack = require('webpack');
 var path = require('path');
 
 const alias = {
-    utils:path.join(__dirname,'src','utils')
+    utils:path.join(__dirname,'src','utils'),
+    mainStore:path.join(__dirname,'src','store','main-store.js'),
+    T:path.join(__dirname,'src','components/common','T.js')
 };
 
 
