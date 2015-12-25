@@ -20,8 +20,8 @@ class Overview extends Component {
 
 	render() {
 		var links = [
-			{name:`${__('Cites')} (15)`,path:'/citation/cites'},
-			{name:`${__('cited-by')} (6)`,path:'/citation/citedby'}
+			{name:'Cites',num:3, path:'/citation/cites'},
+			{name:'cited-by',num:6, path:'/citation/citedby'}
 		];
 		return (
 			<div>

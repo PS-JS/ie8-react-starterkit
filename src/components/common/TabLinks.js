@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from "react";
 import { Link, History } from "react-router";
-
+import T from 'T';
 
 
 var TabLinks = React.createClass({
@@ -13,7 +13,7 @@ var TabLinks = React.createClass({
 		};
 		return (
 			<ul className="link-tab-headers">
-				{this.props.links.map(item=>(<li className={getCname(item.path)} key={item.path}><Link to={item.path}>{item.name}</Link></li>))}
+				{this.props.links.map(item=>(<li className={getCname(item.path)} key={item.path}><Link to={item.path}><T>{item.name}</T></Link></li>))}
 			</ul>
 		);
 	}
